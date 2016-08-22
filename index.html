@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Insert title here</title>
+<!-- 뷰포트 지정 -->
+	<meta name = "viewport" content= "width = device-width, initial-scale= 1.0,
+	maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	
+	<!-- 바로가기 아이콘 지정 -->
+	<link rel = "shortcut icon" href = "./image/icon.png">
+	<link rel = "apple-touch-icon" href = "./image/icon.png">
+	
+	<link href="./framework/diary.css" rel="stylesheet" type="text/css"/>
+	<!-- jQuery Mobile 관련 라이브러리 지정 -->
+	<link href="./framework/jquery.mobile-1.4.5.css"
+		rel = "stylesheet" type="text/css" />
+	
+	<script src= "./framework/jquery-2.1.1.js"></script>
+		<!-- jQuery Form Plugin import -->
+	<script src="./framework/jquery.form.js"></script>
+	<!-- jQuery MultiFile Plugin import -->
+	<script src="./framework/jQuery.MultiFile.min.js"></script>
+	<script src= "./framework/jquery.mobile-1.4.5.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+	<style>
+		input[type=text] {background-color:white;}
+		input[type=button] {background-color:#a7f76e; border-color:#a7f76e;color:white;}
+		input[type=password] {background-color:white;}
+		input[type=number] {background-color:white;}
+		input[type=email] {background-color:white;}
+		input[type=tel] {background-color:white;}
+		input[type=file] {background-color:#a7f76e; color:white; border:0;}
+	</style>
+</head>
+<body>
+<div data-role="page" data-theme="c">
+	
+		<br><br>
+		<div data-role="content">
+		<a href="loginform.me">로그인페이지 이동</a>
+		
+		<script type="text/javascript">
+			window.setTimeout("access()",1500);
+			function access(){
+				$.mobile.changePage("loginform.me");
+			}
+			
+		</script>
+		
+		</div>
+		
+</div>
+
+</body>
+
+</html>
